@@ -12,24 +12,20 @@
 }());
 
 
-
-
 //открытие плашки по наведению на пункт навигации header
 
 (function () {
-    const tabHeaderLink = document.querySelector('.header__link');
-    const tabPlashka= document.querySelector('.plashka');
+    const tabHeaderLink = document.querySelector('.header__item');
+    const tabHeaderSubNav= document.querySelector('.header__sub-nav');
     
     tabHeaderLink.addEventListener('mouseenter', () => {
-        tabPlashka.classList.remove('class_display_none');
+        tabHeaderSubNav.classList.remove('class_display_none');
     });
 
-    tabPlashka.addEventListener('mouseleave', () => {
-        tabPlashka.classList.add('class_display_none');
+    tabHeaderSubNav.addEventListener('mouseleave', () => {
+        tabHeaderSubNav.classList.add('class_display_none');
     });
 }());
-
-
 
 
 //чтоб было возарвщено 29к (и 30к перечеркнуто) при взятых 28к за 14 дней: проценты должны быть такие:
@@ -108,89 +104,90 @@ function crachet() {
     }
    
 //перещелкивание tab-ов "получение" и "погашение" займа 
-(function () {
-        const tabRepayment = document.querySelector('.tab-repayment');
-        const tabGetting = document.querySelector('.tab-getting');
-        const stepsGetting = document.querySelector('.credit-process__steps-getting')
-        const stepsRepayment = document.querySelector('.credit-process__steps-repayment')
-    
-        tabRepayment.addEventListener('click', () => {
-            tabRepayment.classList.add('class_for_repayment');
-            tabRepayment.classList.remove('tab-repayment');
-            tabGetting.classList.add('class_for_getting');
-            tabGetting.classList.remove('tab-getting');
-            stepsGetting.classList.add('class_display_none')
-            stepsRepayment.classList.remove('class_display_none')
-        });
 
-        tabGetting.addEventListener('click', () => {
-            tabRepayment.classList.add('tab-repayment');
-            tabRepayment.classList.remove('class_for_repayment');
-            tabGetting.classList.add('tab-getting');
-            tabGetting.classList.remove('class_for_getting');
-            stepsGetting.classList.remove('class_display_none')
-            stepsRepayment.classList.add('class_display_none')
-        });
-    }());
+(function () {
+    const tabRepayment = document.querySelector('.tab-repayment');
+    const tabGetting = document.querySelector('.tab-getting');
+    const stepsGetting = document.querySelector('.credit-process__steps-getting')
+    const stepsRepayment = document.querySelector('.credit-process__steps-repayment');
+
+    tabRepayment.addEventListener('click', () => {
+        tabRepayment.classList.add('tab-getting'); 
+        tabGetting.classList.remove('tab-getting');
+
+        stepsGetting.classList.add('class_display_none')
+        stepsRepayment.classList.remove('class_display_none')
+    });
+
+    tabGetting.addEventListener('click', () => {    
+        tabRepayment.classList.remove('tab-getting');   
+        tabGetting.classList.add('tab-getting');
+
+        stepsGetting.classList.remove('class_display_none')
+        stepsRepayment.classList.add('class_display_none')
+
+    });
+
+}());    
  
 //открытие-закрытие "часто задаваемых вопросов"
 //чую, есть решение намного элегантнее
 
 (function () {
-    const tabQuestion_1 = document.getElementById('1');
-    const tabQuestion_11 = document.getElementById('11');
-    const tabQuestion_2 = document.getElementById('2');
-    const tabQuestion_22 = document.getElementById('22');
-    const tabQuestion_3 = document.getElementById('3');
-    const tabQuestion_33 = document.getElementById('33');
-    const tabQuestion_4 = document.getElementById('4');
-    const tabQuestion_44 = document.getElementById('44');
+    const arrowDownQuestion_1 = document.getElementById('arrow-down_1');
+    const arrowUpQuestion_1 = document.getElementById('arrow-up_1');
+    const arrowDownQuestion_2 = document.getElementById('arrow-down_2');
+    const arrowUpQuestion_2 = document.getElementById('arrow-up_2');
+    const arrowDownQuestion_3 = document.getElementById('arrow-down_3');
+    const arrowUpQuestion_3 = document.getElementById('arrow-up_3');
+    const arrowDownQuestion_4 = document.getElementById('arrow-down_4');
+    const arrowUpQuestion_4 = document.getElementById('arrow-up_4');
 
     // первый вопрос
-    tabQuestion_1.addEventListener('click', () => {
-        tabQuestion_1.classList.add('class_display_none');
-        tabQuestion_11.classList.remove('class_display_none');
+    arrowDownQuestion_1.addEventListener('click', () => {
+        arrowDownQuestion_1.classList.add('class_display_none');
+        arrowUpQuestion_1.classList.remove('class_display_none');
     });
 
-    tabQuestion_11.addEventListener('click', () => {
-        tabQuestion_11.classList.add('class_display_none');
-        tabQuestion_1.classList.remove('class_display_none');
+    arrowUpQuestion_1.addEventListener('click', () => {
+        arrowUpQuestion_1.classList.add('class_display_none');
+        arrowDownQuestion_1.classList.remove('class_display_none');
     });
 
    // второй вопрос
 
-    tabQuestion_2.addEventListener('click', () => {
-        tabQuestion_2.classList.add('class_display_none');
-        tabQuestion_22.classList.remove('class_display_none');
+   arrowDownQuestion_2.addEventListener('click', () => {
+    arrowDownQuestion_2.classList.add('class_display_none');
+    arrowUpQuestion_2.classList.remove('class_display_none');
     });
 
-    tabQuestion_22.addEventListener('click', () => {
-        tabQuestion_22.classList.add('class_display_none');
-        tabQuestion_2.classList.remove('class_display_none');
+    arrowUpQuestion_2.addEventListener('click', () => {
+        arrowUpQuestion_2.classList.add('class_display_none');
+        arrowDownQuestion_2.classList.remove('class_display_none');
     });
 
     // третий вопрос
 
-    tabQuestion_3.addEventListener('click', () => {
-        tabQuestion_3.classList.add('class_display_none');
-        tabQuestion_33.classList.remove('class_display_none');
+    arrowDownQuestion_3.addEventListener('click', () => {
+        arrowDownQuestion_3.classList.add('class_display_none');
+        arrowUpQuestion_3.classList.remove('class_display_none');
     });
 
-    tabQuestion_33.addEventListener('click', () => {
-        tabQuestion_33.classList.add('class_display_none');
-        tabQuestion_3.classList.remove('class_display_none');
+    arrowUpQuestion_3.addEventListener('click', () => {
+        arrowUpQuestion_3.classList.add('class_display_none');
+        arrowDownQuestion_3.classList.remove('class_display_none');
     });
 
     // четвертый вопрос
 
-    tabQuestion_4.addEventListener('click', () => {
-        tabQuestion_4.classList.add('class_display_none');
-        tabQuestion_44.classList.remove('class_display_none');
+    arrowDownQuestion_4.addEventListener('click', () => {
+        arrowDownQuestion_4.classList.add('class_display_none');
+        arrowUpQuestion_4 .classList.remove('class_display_none');
     });
 
-    tabQuestion_44.addEventListener('click', () => {
-        tabQuestion_44.classList.add('class_display_none');
-        tabQuestion_4.classList.remove('class_display_none');
+    arrowUpQuestion_4 .addEventListener('click', () => {
+        arrowUpQuestion_4 .classList.add('class_display_none');
+        arrowDownQuestion_4.classList.remove('class_display_none');
     });
 }());
 

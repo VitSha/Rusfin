@@ -11,87 +11,101 @@
 <body>
     <header class="header" id="top">
         <div class="container">
-            <div class="wrapper-flex">
-                <div class="header__logo">
-                    <a href="#!" class="header__logo-link">
-                        <img src="./img/logo-pic.png" alt="Деньги.РФ" class="logo__pic">
-                    </a>
-                </div>
-                
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#!" class="header__link">Заёмщику</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#!" class="header__link text_special">Заявка на займ</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#!" class="header__link">Контакты</a>
-                        </li>
-                    </ul>
+            <div class="wrapper-flex space-between">
+                <div class="wrapper-flex">
+                    <div class="header__logo">
+                        <a href="#!" class="header__logo-link">
+                            <img src="./img/logo-pic.png" alt="Деньги.РФ" class="logo__pic">
+                        </a>
+                    </div>
+                    
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Заёмщику</a> 
 
-                    <!-- всплывающая плашка по наведению на "Заемщику" в навигации header -->
-                    <div class="plashka class_display_none">
-                        <ul class="plashka__list">
-                            <li class="plashka__item">
-                                <a href="#!" class="plashka__link">О компании</a>
+                                <!-- всплывающая плашка по наведению на "Заемщику" в навигации header -->
+                                <div class="header__sub-nav class_display_none">
+                                    <ul class="header__sub-nav-list">
+                                        <li class="header__sub-nav-item">
+                                            <a href="#!" class="header__sub-nav-link">О компании</a>
+                                        </li>
+                                        <li class="header__sub-nav-item">
+                                            <a href="#!" class="header__sub-nav-link">Часто задаваемые вопросы</a>
+                                        </li>
+                                        <li class="header__sub-nav-item">
+                                            <a href="#!" class="header__sub-nav-link">Документация</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- всплывающая плашка по наведению на "Заемщику" в навигации header -->
+                        
                             </li>
-                            <li class="plashka__item">
-                                <a href="#!" class="plashka__link">Часто задаваемые вопросы</a>
+                            <li class="header__item">
+                                <a href="#!" class="header__link text_special">Заявка на займ</a>
                             </li>
-                            <li class="plashka__item">
-                                <a href="#!" class="plashka__link">Документация</a>
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Контакты</a>
                             </li>
                         </ul>
-                    </div>
-                     <!-- всплывающая плашка по наведению на "Заемщику" в навигации header -->
-                     
-                </nav>
-
-                <div class="header__contact-phone">
-                    <a href="tel:8(800)5556015" class="contact-phone">8(800)555 60 15</a>
-                    <h4 class="working-hours">с 9:00 до 19:00, ежедневно</h4>
+                    </nav>
                 </div>
 
                 <div class="wrapper-flex">
-                    <div class="button-fictitious personal-account">Личный кабинет</div>
+                    <div class="header__contact-phone">
+                        <a href="tel:8(800)5556015" class="contact-phone">8(800)555 60 15</a>
+                        <h4 class="working-hours">с 9:00 до 19:00, ежедневно</h4>
+                    </div>
+
+                    <div class="wrapper-flex">
+                        <a href="#!" class="personal-account__link">
+                            <div class="button-enter">Личный кабинет</div>
+                        </a>
+                    </div>                    
                 </div>
             </div>
         </div>
     </header>
  
     <section class="offer">
-        <div class="container offer-pic clear">
         
-                <div class="offer__loan float-left">
-                    <div class="offer__loan-title">
-                        <div class="offer__loan-title-text">
-                            Займы под 0% для новых клиентов!
-                        </div>        
-                    </div>   
-                    <div class="offer__loan-more">
-                        <div class="button-fictitious button-fictitious_hover">Подробнее</div>
-                    </div>     
+        <div class="container">
+            <div class="wrapper-flex space-between">
+                <div class="offer__loan">
+                    <div class="offer__loan-pic">
+                        <img src="./img/offer-pic.jpg" class="loan-pic" alt="Займы под 0% для новых клиентов!">
+                    </div>
+                    <div class="wr-flex">
+                        <div class="offer__loan-title">
+                            <h1 class="offer__loan-title-text">
+                                Займы под 0% для новых клиентов!
+                            </h1>       
+                        </div>   
+                        <div class="offer__loan-more">
+                            <div class="button-enter">Подробнее</div>
+                        </div>  
+                    </div>
+
+   
                 </div>
                 
 
-                <div class="offer__calculate float-right">
+                <div class="offer__calculate">
                     <div class="offer__calculate-title">
-                        <div class="offer__calculate-title_text">
+                        <h3 class="offer__calculate-title_text">
                             ВЫБЕРИТЕ ТАРИФ И РАССЧИТАЙТЕ СУММУ ЗАЙМА
-                        </div>
+                        </h3>
                     </div>
                     <form class="calculate__form">
-                        <div class="calculate__form-title">Хочу занять</div>
+                        <h4 class="calculate__form-title">Хочу занять</h4>
                         <div class="calculate__form-field">
                             <div class="wrapper-slider">
                                 <div class="slider-over">
-                                    <div class="text-start">3 000 <span class="rub">Р</span></div>
+                                    <div class="text-start">3 000 ₽</div>
                                 </div>
                                 <div class="slider loan_sum ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
-                                <div class="slider-under">
-                                    <div class="text-end">50 000 <span class="rub">Р</span></div>
+                                <div class="slider-under-50000">
+                                    <div class="text-end">50 000 ₽</div>
                                 </div>
                             </div>
                             
@@ -99,15 +113,15 @@
                                 <div class="slider__field loan_sum_rez text_special"><span>28 000</span> руб.</div>
                             </div>
                         </div>
-                        <div class="calculate__form-title">На срок</div>
+                        <h4 class="calculate__form-title">На срок</h4>
                         <div class="calculate__form-field">
                             <div class="wrapper-slider">
                                 <div class="slider loan_term ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
                                 <div class="slider-under">
-                                    <div class="wrapper-flex space-between">
+                                    <!-- <div class="wrapper-flex space-between"> -->
                                         <div class="text-start">1</div>
                                         <div class="text-end">31</div>
-                                    </div>
+                                    <!-- </div> -->
                                     
                                 </div>
                             </div>
@@ -144,6 +158,8 @@
                         
                     </form>
                 </div>
+            </div>
+                
         </div>
         
     </section>
@@ -163,113 +179,109 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="advantages__header section__header">
-                <h2>Наша компания - это</h2>
-            </div>
-            <div class="advantages__info">
-                <div class="advantages__info-wrapper">
+            <h2 class="advantages__header section__header">
+                Наша компания - это
+            </h2>
+            <div class="advantages__info">           
 
-                    <div class="advantages__info-item">
-                        <div class="advantages__info-item_pic">
-                            <img src="./img/svg/advantages-pic-1.svg" alt="Надежно" class="advantages-pic">
-                        </div>
-                        <div class="advantages__info-item_body">
-                            <div class="item_body-header">
-                                <h3>Надежно</h3>
-                            </div>
-                            <div class="item_body-text">
-                                <p>90% вероятность одобрения! </p>
-                                <p>Если мы по каким-то причинам не сможем одобрить вашу заявку, она автоматически будет передана нашим партнерам и рассмотрена в кратчайшие сроки!</p>    
-                            </div>
-                        </div>
+                <div class="advantages__info-item">
+                    <div class="advantages__info-item_pic">
+                        <img src="./img/svg/advantages-pic-1.svg" alt="Надежно" class="advantages-pic">
                     </div>
-
-                    <div class="advantages__info-item">
-                        <div class="advantages__info-item_pic">
-                            <img src="./img/svg/advantages-pic-2.svg" alt="Быстро" class="advantages-pic">
-                        </div>
-                        <div class="advantages__info-item_body">
-                            <div class="item_body-header">
-                                <h3>Быстро</h3>
-                            </div>
-                            <div class="item_body-text">
-                                <p>Рассмотрение заявки от 1 минуты.</p>
-                            </div>
+                    <div class="advantages__info-item_body">
+                        <h3 class="item_body-header">
+                            Надежно
+                        </h3>
+                        <div class="item_body-text">
+                            <p>90% вероятность одобрения! </p>
+                            <p>Если мы по каким-то причинам не сможем одобрить вашу заявку, она автоматически будет передана нашим партнерам и рассмотрена в кратчайшие сроки!</p>    
                         </div>
                     </div>
                 </div>
 
-                <div class="advantages__info-wrapper">
-
-                    <div class="advantages__info-item">
-                        <div class="advantages__info-item_pic">
-                            <img src="./img/svg/advantages-pic-3.svg" alt="Удобно" class="advantages-pic">
-                        </div>
-                        <div class="advantages__info-item_body">
-                            <div class="item_body-header">
-                                <h3>Удобно</h3>
-                            </div>
-                            <div class="item_body-text">
-                                <p>Погашение займа круглосуточно, без комиссии, любым способом.</p>
-                            </div>
-                        </div>
+                <div class="advantages__info-item">
+                    <div class="advantages__info-item_pic">
+                        <img src="./img/svg/advantages-pic-2.svg" alt="Быстро" class="advantages-pic">
                     </div>
-
-                    <div class="advantages__info-item">
-                        <div class="advantages__info-item_pic">
-                            <img src="./img/svg/advantages-pic-2.svg" alt="Безопасно" class="advantages-pic">
-                        </div>
-                        <div class="advantages__info-item_body">
-                            <div class="item_body-header">
-                                <h3>Безопасно</h3>
-                            </div>
-                            <div class="item_body-text">
-                                <p>Конфиденциальность и защита личной информации.</p>
-                            </div>
+                    <div class="advantages__info-item_body">
+                        <h3 class="item_body-header">
+                            Быстро
+                        </h3>
+                        <div class="item_body-text">
+                            <p>Рассмотрение заявки от 1 минуты.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="advantages__info-item">
+                    <div class="advantages__info-item_pic">
+                        <img src="./img/svg/advantages-pic-3.svg" alt="Удобно" class="advantages-pic">
+                    </div>
+                    <div class="advantages__info-item_body">
+                        <h3 class="item_body-header">
+                            Удобно
+                        </h3>
+                        <div class="item_body-text">
+                            <p>Погашение займа круглосуточно, без комиссии, любым способом.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advantages__info-item">
+                    <div class="advantages__info-item_pic">
+                        <img src="./img/svg/advantages-pic-4.svg" alt="Безопасно" class="advantages-pic">
+                    </div>
+                    <div class="advantages__info-item_body">
+                        <h3 class="item_body-header">
+                            Безопасно
+                        </h3>
+                        <div class="item_body-text">
+                            <p>Конфиденциальность и защита личной информации.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <section class="credit-process">
         <div class="container">
-            <div class="credit-process__tabs">
-                <div class="credit-process__tabs-tab tab-getting">
+            <ul class="credit-process__tabs">
+                <li class="credit-process__tabs-tab tab-getting">
                     Получение займа
-                </div>
-                <div class="credit-process__tabs-tab tab-repayment">
+                </li>
+                <li class="credit-process__tabs-tab tab-repayment">
                     Погашение займа
-                </div>
-            </div>
-            <div class="credit-process__steps credit-process__steps-getting">
-                <div class="credit-process__steps-step">
-                    <div class="step-title">Заявка</div>
+                </li>
+            </ul>
+            <ul class="credit-process__steps credit-process__steps-getting">
+                <li class="credit-process__steps-step">
+                    <h3 class="step-title">Заявка</h3>
                     <div class="step-body">
                         <p>Заполните заявку на микрозайм <br>(10 минут)</p>
                         <p>Паспортные данные, номер телефона, информация о доходах.</p>
                     </div>
-                </div>
-                <div class="credit-process__steps-step">
-                    <div class="step-title">Одобрение</div>
+                </li>
+                <li class="credit-process__steps-step">
+                    <h3 class="step-title">Одобрение</h3>
                     <div class="step-body">
                         <p>Получите одобрение (7 минут)</p>
                         <p>Мы сообщим вам по email и SMS.</p>
                     </div>
-                </div>
-                <div class="credit-process__steps-step">
-                    <div class="step-title">Деньги</div>
+                </li>
+                <li class="credit-process__steps-step">
+                    <h3 class="step-title">Деньги</h3>
                     <div class="step-body">
                         <p>Заберите деньги (30 секунд)</p>
                         <p>На банковскую карту, наличными в нашем офисе.</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
  
-            <div class="credit-process__steps credit-process__steps-repayment class_display_none">
-                <div class="credit-process__steps-step">
-                    <div class="step-title">Онлайн оплата</div>
+            <ul class="credit-process__steps credit-process__steps-repayment class_display_none">
+                <li class="credit-process__steps-step">
+                    <h3 class="step-title">Онлайн оплата</h3>
                     <div class="step-body">
                         <p>
                         Банковская карта<br>
@@ -278,84 +290,84 @@
                         Мобильные банки<br>
                         </p>
                     </div>
-                </div>
-                <div class="credit-process__steps-step">
-                    <div class="step-title">Наличными</div>
+                </li>
+                <li class="credit-process__steps-step">
+                    <h3 class="step-title">Наличными</h3>
                     <div class="step-body">
                         <p>Найдите ближайший к вам офис и погасите свой заём без комиссии</p>
                         <p>Вам необходимо будет сообщить номер договора</p>
                     </div>
-                </div>
-                <div class="credit-process__steps-step">
-                    <div class="step-title"></div>
+                </li>
+                <li class="credit-process__steps-step">
+                    <div class="step-title-fake"></div>
                     <div class="step-body">
                         <p>Если ко дню окончания договора у вас нет полной суммы займа, или вы хотите увеличить срок пользования деньгами, вы можете продлить заём в личном кабинете.</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
 
         </div> 
     </section>
 
     <section class="services">
         <div class="container">
-            <div class="services__header section__header">Мы предлагаем</div>
-            <div class="wrapper-flex space-between">
+            <h2 class="services__header section__header">Мы предлагаем</h2>
+            <div class="services__wrapper">
                <div class="services__service">
-                   <div class="services__service-title">Мини-займы</div>
+                   <h3 class="services__service-title">Мини-займы</h3>
                    <div class="services__service-icon">
                        <img src="./img/svg/services-pic-1.svg" alt="Мини-займы">
                    </div>
                    <div class="services__service-info">
                         <div class="service-info__monney">2 000 ₽ -  10 000 ₽</div>
                         <div class="service-info__condition">
-                            <div class="condition-date">Срок:<br>7-30 дней</div>
-                            <div class="condition-percent">Ставка в день:<br>от 0%</div>
+                            <div class="condition-date text-start">Срок:<br>7-30 дней</div>
+                            <div class="condition-percent text-end">Ставка в день:<br>от 0%</div>
                         </div>
                         <button type="button" class="getting-monney">Получить деньги</button>
                    </div>
                </div>
 
                <div class="services__service">
-                <div class="services__service-title">Под 0%</div>
+                <h3 class="services__service-title">Под 0%</h3>
                 <div class="services__service-icon">
                     <img src="./img/svg/services-pic-2.svg" alt="Мини-займы">
                 </div>
                 <div class="services__service-info">
                      <div class="service-info__monney">11 000 ₽ - 20 000 ₽  </div>
                      <div class="service-info__condition">
-                         <div class="condition-date">Срок:<br>7-30 дней</div>
-                         <div class="condition-percent">Ставка в день:<br>от 0%</div>
+                         <div class="condition-date text-start">Срок:<br>7-30 дней</div>
+                         <div class="condition-percent text-end">Ставка в день:<br>от 0%</div>
                      </div>
                      <button type="button" class="getting-monney">Получить деньги</button>
                 </div>
             </div>
 
             <div class="services__service">
-                <div class="services__service-title">Топ-займы</div>
+                <h3 class="services__service-title">Топ-займы</h3>
                 <div class="services__service-icon">
                     <img src="./img/svg/services-pic-3.svg" alt="Мини-займы">
                 </div>
                 <div class="services__service-info">
                      <div class="service-info__monney">21 000 ₽ - 30 000 ₽</div>
                      <div class="service-info__condition">
-                         <div class="condition-date">Срок:<br>2-12 месяцев</div>
-                         <div class="condition-percent">Ставка в день:<br>от 0,5%</div>
+                         <div class="condition-date text-start">Срок:<br>2-12 месяцев</div>
+                         <div class="condition-percent text-end">Ставка в день:<br>от 0,5%</div>
                      </div>
                      <button type="button" class="getting-monney">Получить деньги</button>
                 </div>
             </div>
 
             <div class="services__service">
-                <div class="services__service-title">На год</div>
+                <h3 class="services__service-title">На год</h3>
                 <div class="services__service-icon">
                     <img src="./img/svg/services-pic-4.svg" alt="Мини-займы">
                 </div>
                 <div class="services__service-info">
                      <div class="service-info__monney">31 000 ₽ - 100 000 ₽</div>
                      <div class="service-info__condition">
-                         <div class="condition-date">Срок:<br>2-12 месяцев</div>
-                         <div class="condition-percent">Ставка в день:<br>от 0,5%</div>
+                         <div class="condition-date text-start">Срок:<br>2-12 месяцев</div>
+                         <div class="condition-percent text-end">Ставка в день:<br>от 0,5%</div>
                      </div>
                      <button type="button" class="getting-monney">Получить деньги</button>
                 </div>
@@ -367,15 +379,15 @@
 
     <section class="reviews">
         <div class="container">
-            <div class="reviews__header section__header">Отзывы</div>
-            <div class="wrapper-flex space-between">
+            <h2 class="reviews__header section__header">Отзывы</h2>
+            <div class="reviews__wrapper">
                 <div class="reviews__review">
                     <div class="reviews__review-comment">
                         <p>Я, Людмила Юрьевна, выражаю благодарность сотруднику компании Кристине за хорошее доброе отношение при оформлении.</p>
                     </div>
                     <div class="reviews__review-commentator">
                         <div class="commentator-avatar">
-                            <img src="./img/svg/review-pic-1.svg " alt="Демнина Людмила">
+                            <img src="./img/svg/review-pic-1.svg" alt="Демнина Людмила">
                         </div>
                         <div class="commentator-name">Демнина Людмила,<br>20.09.2019</div>
                     </div>
@@ -414,114 +426,117 @@
 
     <section class="questions">
         <div class="container">
-            <div class="questions__header section__header">Часто задаваемые вопросы</div>
+            <h2 class="questions__header section__header">Часто задаваемые вопросы</h2>
             <div class="questions__body">
 
                 <!-- первый вопрос (два блока: один display: none) -->
 
-                <div class="questions__wrapper" id="1">
+                <div class="questions__wrapper" id="arrow-down_1">
                     <div class="questions__question">
                       
-                        <img src="./img/svg/question-tab-1.svg" class="question_tab-down" alt="hz">
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up class_display_none" alt="hz">
-                        
+                        <img src="./img/svg/question-tab-1.svg" class="question_arrow-down" alt="question arrow down"> 
+
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
                         </div> 
                     </div>
                 </div>
 
-                <div class="questions__wrapper questions__wrapper-border class_display_none" id="11">
+                <div class="questions__wrapper questions__wrapper-border class_display_none" id="arrow-up_1">
                     <div class="questions__question">
                     
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up" alt="hz">
+                        <img src="./img/svg/question-tab-2.svg" class="question_arrow-up" alt="question arrow up">
                         
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
+
+                            <p class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div> 
                     </div>
-                    <div class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                    
                 </div>
 
                  <!-- второй вопрос (два блока: один display: none) -->
 
-                 <div class="questions__wrapper" id="2">
+                 <div class="questions__wrapper" id="arrow-down_2">
                     <div class="questions__question">
                       
-                        <img src="./img/svg/question-tab-1.svg" class="question_tab-down" alt="hz">
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up class_display_none" alt="hz">
-                        
+                        <img src="./img/svg/question-tab-1.svg" class="question_arrow-down" alt="question arrow down">
+                                               
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
                         </div> 
                     </div>
                 </div>
 
-                <div class="questions__wrapper questions__wrapper-border class_display_none" id="22">
+                <div class="questions__wrapper questions__wrapper-border class_display_none" id="arrow-up_2">
                     <div class="questions__question">
                     
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up" alt="hz">
+                        <img src="./img/svg/question-tab-2.svg" class="question_arrow-up" alt="question arrow up">
                         
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
+
+                            <p class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div> 
                     </div>
-                    <div class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                    
                 </div>
 
 
                  <!-- третий вопрос (два блока: один display: none) -->
 
-                 <div class="questions__wrapper" id="3">
+                 <div class="questions__wrapper" id="arrow-down_3">
                     <div class="questions__question">
                       
-                        <img src="./img/svg/question-tab-1.svg" class="question_tab-down" alt="hz">
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up class_display_none" alt="hz">
-                        
+                        <img src="./img/svg/question-tab-1.svg" class="question_arrow-down" alt="question arrow down">
+                                              
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
                         </div> 
                     </div>
                 </div>
 
-                <div class="questions__wrapper questions__wrapper-border class_display_none" id="33">
+                <div class="questions__wrapper questions__wrapper-border class_display_none" id="arrow-up_3">
                     <div class="questions__question">
                     
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up" alt="hz">
+                        <img src="./img/svg/question-tab-2.svg" class="question_arrow-up" alt="question arrow up">
                         
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
+
+                            <p class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div> 
                     </div>
-                    <div class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                    
                 </div>
 
                  <!-- четвертый вопрос (два блока: один display: none) -->
 
-                 <div class="questions__wrapper" id="4">
+                 <div class="questions__wrapper" id="arrow-down_4">
                     <div class="questions__question">
                       
-                        <img src="./img/svg/question-tab-1.svg" class="question_tab-down" alt="hz">
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up class_display_none" alt="hz">
-                        
+                        <img src="./img/svg/question-tab-1.svg" class="question_arrow-down" alt="question arrow down">
+                      
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
                         </div> 
                     </div>
                 </div>
 
-                <div class="questions__wrapper questions__wrapper-border class_display_none" id="44">
+                <div class="questions__wrapper questions__wrapper-border class_display_none" id="arrow-up_4">
                     <div class="questions__question">
                     
-                        <img src="./img/svg/question-tab-2.svg" class="question_tab-up" alt="hz">
+                        <img src="./img/svg/question-tab-2.svg" class="question_arrow-up" alt="question arrow up">
                         
                         <div class="question__title">
                             <h3>Какие документы нужны для оформления?</h3>
+
+                            <p class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                         </div> 
                     </div>
-                    <div class="question__addition">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                    
                 </div>
-
 
             </div>
             
@@ -532,41 +547,37 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__info">
+
                     <div class="footer__info-identification">
-                        <div class="footer_logo">
-                            <img src="./img/logo-pic.png" alt="Деньги РФ">
-                        </div>
+                        <div class="footer_logo"></div>
                         <p class="identification-text">2019. МКК РусФин</p>
                         <a href="#!" class="footer_link">Политика конфиденциальности</a>
                     </div>
+ 
                     <div class="footer__info-nav">
-                        <div class="nav-list">
-                            <ul class="footer-nav">
-                                <li class="footer-nav_item">
-                                    <a href="#!">Заёмщику</a>
-                                </li>
-                                <li class="footer-nav_item">
-                                    <a href="#!">Заявка наличными</a>
-                                </li>
-                                <li class="footer-nav_item">
-                                    <a href="#!">О компании</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="nav-list">
-                            <ul class="footer-nav">
-                                <li class="footer-nav_item">
-                                    <a href="#!">Часто задаваемые вопросы</a>
-                                </li>
-                                <li class="footer-nav_item">
-                                    <a href="#!">Документация</a>
-                                </li>
-                                <li class="footer-nav_item">
-                                    <a href="#!">Реквизиты</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="footer-nav">
+                            <li class="footer-nav_item">
+                                <a href="#!">Заёмщику</a>
+                            </li>
+                            <li class="footer-nav_item">
+                                <a href="#!">Заявка наличными</a>
+                            </li>
+                            <li class="footer-nav_item">
+                                <a href="#!">О компании</a>
+                            </li>
+                        </ul>
+    
+                        <ul class="footer-nav">
+                            <li class="footer-nav_item">
+                                <a href="#!">Часто задаваемые вопросы</a>
+                            </li>
+                            <li class="footer-nav_item">
+                                <a href="#!">Документация</a>
+                            </li>
+                            <li class="footer-nav_item">
+                                <a href="#!">Реквизиты</a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
